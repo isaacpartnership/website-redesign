@@ -1,0 +1,68 @@
+{
+  "people": {
+    "results": [{
+      "gender": "male",
+      "name": {
+        "first": "Chris",
+        "last": "Isaac"
+      },
+      "picture": {
+        "thumbnail": "http://randomuser.me/api/portraits/thumb/lego/1.jpg"
+      }
+    }, {
+      "gender": "female",
+      "name": {
+        "first": "Tracy",
+        "last": "Isaac"
+      },
+      "picture": {
+        "thumbnail": "http://randomuser.me/api/portraits/thumb/lego/2.jpg"
+      }
+    }, {
+      "gender": "male",
+      "name": {
+        "first": "Nick",
+        "last": "Lock"
+      },
+      "picture": {
+        "thumbnail": "http://randomuser.me/api/portraits/thumb/lego/5.jpg"
+      }
+    }, {
+      "gender": "female",
+      "name": {
+        "first": "Tayah",
+        "last": "Chapman-Hurley"
+      },
+      "picture": {
+        "thumbnail": "http://randomuser.me/api/portraits/thumb/lego/9.jpg"
+      }
+    }, {
+      "gender": "male",
+      "name": {
+        "first": "Andy",
+        "last": "Parsons"
+      },
+      "picture": {
+        "thumbnail": "http://randomuser.me/api/portraits/thumb/lego/3.jpg"
+      }
+    }, {
+      "gender": "male",
+      "name": {
+        "first": "Tom",
+        "last": "Mankee"
+      },
+      "picture": {
+        "thumbnail": "http://randomuser.me/api/portraits/thumb/lego/6.jpg"
+      }
+    }, {
+      "gender": "male",
+      "name": {
+        "first": "Will",
+        "last": "Skane-Davis"
+      },
+      "picture": {
+        "thumbnail": "http://randomuser.me/api/portraits/thumb/lego/0.jpg"
+      }
+    }]
+  }
+}

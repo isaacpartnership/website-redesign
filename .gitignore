@@ -1,0 +1,16 @@
+# node_modules
+node_modules
+.idea
+
+# File system
+.DS_Store
+Thumbs.db
+
+# App
+reports
+
+# Logs
+logs
+*.log
+npm-debug.log
+yarn-error.log

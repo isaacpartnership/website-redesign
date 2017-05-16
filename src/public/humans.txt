@@ -1,0 +1,12 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    andparsons
+
+# TECHNOLOGY COLOPHON
+
+    VueJs, Vue-resource, Vue-router
+    Webpack, ES6, CSS3, SCSS, HTML5
+    Karma, Mocha, Chai, Nightwatch, Coverage
