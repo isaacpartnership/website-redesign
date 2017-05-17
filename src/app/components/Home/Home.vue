@@ -2,7 +2,7 @@
 #home
   h1 Home
   //.logo_test
-  img(src='assets/img/logo.svg')
+  img(src='/assets/img/logo.svg')
 </template>
 <script>
 export default {

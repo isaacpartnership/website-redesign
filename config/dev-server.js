@@ -23,6 +23,8 @@ const server = new WebpackDevServer(compiler, {
     aggregateTimeout: 300,
     poll: 1000
   },
+  host: '0.0.0.0',
+  disableHostCheck: true,
   publicPath: webpackConfig.output.publicPath,
   stats: {
     colors: true,

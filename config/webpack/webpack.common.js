@@ -116,7 +116,7 @@ module.exports = {
         context: '/',
         postcss: [
           autoprefixer({
-            browsers: ['last 3 version']
+            browsers: ["ie >= 9", "> 3%", "last 3 version"]
           })
         ],
         sassLoader: {
