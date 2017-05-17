@@ -13,14 +13,17 @@ export default {
 
 <template lang="pug">
 #app
-  nav.menu
-    ul
-      li.home
-          router-link(to='/home') Home
-      li.peopleList
-          router-link(to='/peopleList') People list
-      li.about
-          router-link(to='/about') About
-  transition(name='fade', mode='out-in')
-    router-view.router-view
+    header#header.header
+        router-link(to='/home')#logo
+            img(src='/assets/img/logo.svg')
+        nav.menu
+            ul
+                li.home
+                    router-link(to='/home') Home
+                li.peopleList
+                    router-link(to='/peopleList') People list
+                li.about
+                    router-link(to='/about') About
+    transition(name='fade', mode='out-in')
+        router-view.router-view
 </template>

@@ -11,11 +11,11 @@ module.exports = {
   entry: {
     'app': [
       './src/app/main.js'
-    ],
-    'polyfills': './src/app/polyfills.js'
+    ]
   },
   devtool: 'source-map',
   output: {
+    path: '/',
     filename: 'js/[name]-[chunkhash:7].js',
     chunkFilename: 'js/[name]-[chunkhash:7].js'
   },
@@ -155,21 +155,5 @@ module.exports = {
       }
     })
   ],
-  // Nice colored output
-  stats: {
-    colors: true,
-    hash: true,
-    version: true,
-    timings: true,
-    assets: false,
-    chunks: false,
-    chunkModules: false,
-    modules: true,
-    children: false,
-    cached: false,
-    reasons: true,
-    source: false,
-    errorDetails: true,
-    chunkOrigins: false
-  }
+  stats: 'minimal'
 }

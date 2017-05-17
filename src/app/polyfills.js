@@ -1,6 +1,6 @@
 // ES6 polyfills
 // We can either import the whole library
-import 'core-js'
+// import 'core-js'
 
 // or import just those needed
 // import 'core-js/es6/array'

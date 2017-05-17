@@ -10,6 +10,7 @@ webpackConfig.entry.app.unshift('webpack-dev-server/client?http://localhost:' + 
 const server = new WebpackDevServer(compiler, {
   contentBase: path.resolve('/'),
   historyApiFallback: true,
+  noInfo: true,
   setup: app => {
     var jsonServer = require('json-server')
     app.use('/assets', express.static(path.join(__dirname, '../src/assets/')))
@@ -26,22 +27,7 @@ const server = new WebpackDevServer(compiler, {
   host: '0.0.0.0',
   disableHostCheck: true,
   publicPath: webpackConfig.output.publicPath,
-  stats: {
-    colors: true,
-    hash: true,
-    version: true,
-    timings: true,
-    assets: false,
-    chunks: true,
-    chunkModules: false,
-    modules: false,
-    children: false,
-    cached: false,
-    reasons: true,
-    source: false,
-    errorDetails: true,
-    chunkOrigins: false
-  }
+  stats: 'minimal'
 })
 module.exports = server.listen(port, err => {
   if (err) {

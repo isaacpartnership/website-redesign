@@ -3,6 +3,7 @@ const webpackMerge = require('webpack-merge')
 const commonConfig = require('./webpack.common.js')
 const pkg = require('../../package.json')
 const path = require('path')
+const Prerender = require('prerender-spa-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin
 
@@ -11,6 +12,12 @@ module.exports = webpackMerge(commonConfig, {
     path: path.resolve('./dist')
   },
   plugins: [
+    new Prerender(
+        // Absolute path to compiled SPA
+        path.resolve('./dist'),
+        // List of routes to prerender
+        [ '/about', '/home' ]
+    ),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
       'process.env.API_endPoint': JSON.stringify('https://api.randomuser.me/')
@@ -25,9 +32,9 @@ module.exports = webpackMerge(commonConfig, {
       ignore: ['*.pug', 'Thumbs.db']
     }),
     new UglifyJsPlugin({
-      sourceMap: true,
+      sourceMap: false,
       compress: {
-        screw_ie8: false,
+        screw_ie8: true,
         unused: true,
         warnings: false
       },
@@ -59,22 +66,7 @@ module.exports = webpackMerge(commonConfig, {
       }
     })
   ],
-  stats: {
-    colors: true,
-    hash: true,
-    version: true,
-    timings: true,
-    assets: true,
-    chunks: false,
-    chunkModules: false,
-    modules: true,
-    children: false,
-    cached: false,
-    reasons: true,
-    source: false,
-    errorDetails: true,
-    chunkOrigins: false
-  }
+  stats: 'minimal'
 })
 
 // Generate banner text for Webpack banner"s plugin.

@@ -1,9 +1,14 @@
 /* We can import any classic CSS from anywhere */
-@import 'style.css';
+$bg: #FFFFFF;
+$blue: #022C53;
+
 @import 'typography';
 @import 'radio_buttons';
 @import 'menu';
 
+*, :after, :before {
+  box-sizing: border-box;
+}
 html {
   height: 100%;
 }
@@ -11,17 +16,11 @@ body {
   height: 100%;
   margin: 0;
   min-height: 100%;
-  background: #000000;
-  color: #FFFFFF;
-  position: relative;
+  background-color: $bg;
 }
 #header {
-  height: 100px;
   width: 100%;
-  top: 0;
-  left: 0;
-  background: #485151;
-  position: fixed;
+  background-color: $bg;
 }
 #footer {
   height: 30px;
@@ -30,30 +29,13 @@ body {
   display: flex;
   left: 0;
   color: white;
-  background: #485151;
+  background-color: $blue;
   position: fixed;
   border-bottom-width: 0;
-}
-#content {
-  height: 100%;
-  padding: 0 0;
-  > div {
-    padding: 100px 0;
-  }
 }
 h1.title {
   font-size: 28px;
   margin: auto 0;
-}
-.subh {
-  display: inline-flex;
-}
-.header {
-  display: block;
-  z-index: 10000;
-  // padding-left: 20px;
-  background-color: #181b1b;
-  // border-bottom: 2px solid #737373;
 }
 .footer {
   padding: 7px 0 0 0;
@@ -78,18 +60,10 @@ h1.title {
     }
   }
 }
-h1#logo {
-  margin-left: 10px;
-}
-#logo a {
+#logo{
   display: block;
   width: 74px;
   height: 64px;
-  background: url("../assets/img/logo.png") no-repeat left top;
-  background-size: contain;
-  span {
-    display: none;
-  }
 }
 .router-view {
   // margin: 15px
