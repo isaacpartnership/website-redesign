@@ -1,8 +1,8 @@
 - o = htmlWebpackPlugin.options
 
 doctype html
-html
-  head
+html(lang="en")
+  head.why
     meta(http-equiv='Content-type', content='text/html; charset=utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     script(src='https://cdn.polyfill.io/v2/polyfill.min.js')
@@ -14,15 +14,15 @@ html
     link(rel='shortcut icon', href='/assets/favicons/favicon.ico')
     each val, index in htmlWebpackPlugin.files.css
       link(href=''+val, rel='stylesheet', type='text/css')
-body
-  #app
-  #footer.footer
-    h5 Powered by &nbsp;
-      a.vuejs_link(href='https://vuejs.org/') Vuejs
-      | &nbsp;and&nbsp;
-      a.webpack_link(href='http://webpack.github.io/') WebPack
-      | .&nbsp; &nbsp;| &nbsp; &nbsp;© &nbsp;
-      = new Date().getFullYear().toString()
+  body.no-js
+    #app
+    #footer.footer
+      h5 Powered by &nbsp;
+        a.vuejs_link(href='https://vuejs.org/') Vuejs
+        | &nbsp;and&nbsp;
+        a.webpack_link(href='http://webpack.github.io/') WebPack
+        | .&nbsp; &nbsp;| &nbsp; &nbsp;© &nbsp;
+        = new Date().getFullYear().toString()
 
-  each val, index in htmlWebpackPlugin.files.chunks
-    script(src=''+htmlWebpackPlugin.files.chunks[index].entry)
+    each val, index in htmlWebpackPlugin.files.chunks
+      script(src=''+htmlWebpackPlugin.files.chunks[index].entry)

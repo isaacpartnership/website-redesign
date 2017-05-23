@@ -84,6 +84,7 @@
     "saucelabs": "^1.4.0",
     "selenium-standalone": "^6.1.0",
     "style-loader": "^0.17.0",
+    "stylelint": "^7.10.1",
     "url-loader": "^0.5.8",
     "vbuild": "^7.1.0",
     "vue-loader": "^12.0.4",
@@ -97,6 +98,7 @@
     "webpack-merge": "^4.1.0"
   },
   "dependencies": {
+    "masonry-layout": "^4.2.0",
     "vue": "^2.2.6",
     "vue-resource": "^1.2.1",
     "vue-router": "^2.3.1",
