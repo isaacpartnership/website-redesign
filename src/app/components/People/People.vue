@@ -15,6 +15,9 @@ export default {
       person: null
     }
   },
+  mounted () {
+    this.$ls.set('last-page', 'profile')
+  },
   methods: {
     getPeople (i) {
       if (store.state.persons.length === 0) {
@@ -22,6 +25,11 @@ export default {
       } else {
         this.person = store.state.persons[i]
       }
+    }
+  },
+  metaInfo () {
+    return {
+      title: `${this.person.name.first} ${this.person.name.last}`
     }
   },
   created () {

@@ -7,8 +7,12 @@ import UserService from '../../services/UserService'
 Vue.use(Vuex)
 Vue.filter('capitalize', value => value.charAt(0).toUpperCase() + value.substr(1))
 
-export default {
+module.exports = {
   name: 'PeopleList',
+  metaInfo: {
+    // title will be injected into parent titleTemplate
+    title: 'Our Team'
+  },
   data () {
     return {
       environment: process.env.NODE_ENV,
@@ -57,6 +61,7 @@ export default {
     }
   },
   mounted () {
+    this.$ls.set('last-page', 'team')
     this.reload()
     Vue.nextTick(function () {
     })

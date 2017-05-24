@@ -80,6 +80,7 @@
     "pug": "^2.0.0-beta9",
     "pug-loader": "^2.3.0",
     "rimraf": "^2.6.1",
+    "rollup-loader": "^0.3.0",
     "sass-loader": "^6.0.3",
     "saucelabs": "^1.4.0",
     "selenium-standalone": "^6.1.0",
@@ -89,6 +90,7 @@
     "vbuild": "^7.1.0",
     "vue-loader": "^12.0.4",
     "vue-play": "^3.2.1",
+    "vue-select": "sagalbot/vue-select",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.2.6",
     "webpack": "^2.3.2",
@@ -100,6 +102,8 @@
   "dependencies": {
     "masonry-layout": "^4.2.0",
     "vue": "^2.2.6",
+    "vue-ls": "^2.2.15",
+    "vue-meta": "^1.0.4",
     "vue-resource": "^1.2.1",
     "vue-router": "^2.3.1",
     "vuex": "^2.2.1"

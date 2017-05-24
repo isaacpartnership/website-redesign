@@ -12,6 +12,9 @@ export default {
   components: {
     Banner,
     GridNews
+  },
+  mounted () {
+    this.$ls.set('last-page', 'home')
   }
 }
 </script>
