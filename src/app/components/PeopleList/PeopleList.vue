@@ -7,7 +7,7 @@ import UserService from '../../services/UserService'
 Vue.use(Vuex)
 Vue.filter('capitalize', value => value.charAt(0).toUpperCase() + value.substr(1))
 
-module.exports = {
+export default {
   name: 'PeopleList',
   metaInfo: {
     // title will be injected into parent titleTemplate
@@ -68,4 +68,4 @@ module.exports = {
   }
 }
 </script>
-<style lang='scss' src='./style.scss'></style>
+<style lang='scss' src='./style.scss' scoped></style>

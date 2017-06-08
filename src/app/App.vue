@@ -1,6 +1,7 @@
 <script>
   import Home from './components/Home/Home'
   import PeopleList from './components/PeopleList/PeopleList'
+  import About from './components/About/About'
 
   export default {
     name: 'app',
@@ -12,7 +13,8 @@
     },
     components: {
       Home,
-      PeopleList
+      PeopleList,
+      About
     }
   }
 </script>

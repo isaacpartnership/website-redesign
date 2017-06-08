@@ -1,7 +1,7 @@
 <template lang="pug">
 #banner
   form
-    v-select(class='convSel', :value.sync='selected', :options='options', :searchable='false')
+    v-select(class='convSel', :value.sync='selected', :options='options', :searchable='false', :on-change="consoleCallback")
     label(for='role') I'm a
       select(id='role', class='convSel')
         option(value='student') Student
@@ -22,6 +22,11 @@ export default {
   components: {
     vSelect
   },
+  methods: {
+    consoleCallback (val) {
+      alert(JSON.stringify(val))
+    }
+  },
   data () {
     return {
       selected: null,
@@ -30,4 +35,4 @@ export default {
   }
 }
 </script>
-<style lang='scss' src='./style.scss'></style>
+<style lang='scss' src='./style.scss' scoped></style>

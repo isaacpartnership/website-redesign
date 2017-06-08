@@ -14,26 +14,33 @@ const Parent = {
 
 export default new Router({
   mode: 'history',
-  routes: [{
-    path: '/home',
-    component: require('../components/Home/Home')
-  },
-  { path: '/peopleList',
-    component: Parent,
-    children: [
-      { path: '',
-        component: require('../components/PeopleList/PeopleList')},
-      { path: ':slug?',
-        name: 'people',
-        component: require('../components/People/People')}
-    ]
-  },
-  {
-    path: '/about',
-    component: () => require.ensure([], () => require('../components/About/About'), 'About'),
-    name: 'about'
-  }, {
-    path: '/',
-    redirect: '/home'
-  }]
+  routes: [
+    {
+      path: '/home',
+      component: require('../components/Home/Home.vue')
+    },
+    { path: '/peopleList',
+      component: Parent,
+      children: [
+        {
+          path: '',
+          component: require('../components/PeopleList/PeopleList.vue')
+        },
+        {
+          path: ':slug?',
+          name: 'people',
+          component: require('../components/People/People.vue')
+        }
+      ]
+    },
+    {
+      path: '/about',
+      component: () => require.ensure([], () => require('../components/About/About.vue'), 'About'),
+      name: 'about'
+    },
+    {
+      path: '/',
+      redirect: '/home'
+    }
+  ]
 })

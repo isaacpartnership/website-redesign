@@ -4,7 +4,7 @@
 </template>
 <script>
 export default {
-  name: 'About5',
+  name: 'About',
   metaInfo: {
     // title will be injected into parent titleTemplate
     title: 'About Us'

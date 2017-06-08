@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import App from './App'
 import Resource from 'vue-resource'
 import Meta from 'vue-meta'
 import LS from 'vue-ls'
 import router from './router'
 import store from './store'
+import App from './App.vue'
 
 require('../style/style.scss')
 
