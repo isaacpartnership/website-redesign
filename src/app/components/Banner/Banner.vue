@@ -52,7 +52,7 @@
       return {
         selected: null,
         likeToOpt: ['see your work', 'email you', 'call you', 'receive a callback'],
-        whatAreYouOpt: ['business owner', 'student', 'designer', 'interested person', 'competitor'],
+        whatAreYouOpt: ['business owner', 'student', 'interested person', 'designer', 'competitor'],
         lookForOpt: ['website design', 'brand identity', 'marketing plan', 'new advert', 'new job', 'original idea']
       }
     }
