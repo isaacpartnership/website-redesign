@@ -1,0 +1,30 @@
+.top_Heading {
+    font-family: Open Sans, regular, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.Spacing {
+    height: 20px;
+    margin: 20px 0;
+}
+.dropdown.v-select.unsearchable {
+    min-width:300px;
+    float: left;
+    width:auto;
+    position: relative;
+    font-size: 40px;
+    margin-top: 10px;
+    height:auto;
+}
+.idLikeTo_Text, .imA_text, .lookingFor_text {
+    display:inline-block;
+    float: left;
+    margin-top:0;
+    margin-bottom:0;
+    margin-right: 10px;
+    font-size:40px;
+}
+.selected-tag {
+    height:40px !important;
+    padding-top:6px !important;
+}
