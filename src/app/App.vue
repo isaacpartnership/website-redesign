@@ -28,10 +28,16 @@
         ul
           li.home
             router-link(to='/home') Home
+          li.strategy
+            router-link(to='/strategy') Strategy
+          li.jobs
+            router-link(to='/jobs') Jobs
           li.peopleList
-            router-link(to='/peopleList') People list
+            router-link(to='/peopleList') People
           li.about
             router-link(to='/about') About
     transition(name='fade', mode='out-in')
       router-view.router-view
 </template>
+
+<style lang='scss' src='./style.scss'></style>

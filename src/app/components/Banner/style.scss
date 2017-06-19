@@ -1,3 +1,7 @@
+.Banner_OuterCont {
+    margin-left:5%;
+    margin-right:5%;
+}
 .top_Heading {
     font-family: Open Sans, regular, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
     text-transform: uppercase;
@@ -5,7 +9,7 @@
 }
 .Spacing {
     height: 20px;
-    margin: 20px 0;
+    margin-bottom: 50px;
 }
 .dropdown.v-select.unsearchable {
     min-width:300px;
@@ -13,18 +17,41 @@
     width:auto;
     position: relative;
     font-size: 40px;
-    margin-top: 10px;
-    height:auto;
+    margin-top: 5px;
+}
+.v-select .selected-tag {
+    height:40px !important;
+    background-color:transparent !important;
+    border:none !important;
+    color: #ff00ba !important;
 }
 .idLikeTo_Text, .imA_text, .lookingFor_text {
     display:inline-block;
     float: left;
-    margin-top:0;
-    margin-bottom:0;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-right: 10px;
-    font-size:40px;
+    font-size: 40px;
 }
 .selected-tag {
     height:40px !important;
     padding-top:6px !important;
+}
+.v-select .dropdown-toggle {
+    overflow: visible !important;
+    height:50px;
+    border-color: #f2f2f2 !important;
+
+}
+.v-select .dropdown-menu {
+    overflow: auto !important;
+    width: 600px !important;
+    margin-top: -40px !important;
+    border-top: 1px solid #cccccc !important;
+}
+.v-select .open-indicator {
+    bottom: 10px !important;
+}
+.lookingFor_Cont {
+    margin-top:20px;
 }
