@@ -1,12 +1,68 @@
 #logo {
     height:120px !important;
+    width:auto;
+    margin-left: 8%;
+
 }
 #logo > img {
     height: 75px;
     width: 255px;
-    margin: 25px 0 25px 120px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 #header > nav {
     background-color:#202C54;
     margin-top:6px;
+}
+#topNav {
+    letter-spacing: 1px;
+    max-width: 80%;
+}
+@media screen and (min-width:900px) {
+    #topNav {
+        margin-left:8%;
+    }
+    .strategy:before, .jobs:before, .peopleList:before, .about:before {
+        display:inline-block !important;
+        margin-left: 3%;
+    }
+}
+.menu ul li a {
+    background: transparent !important;
+    padding: 15px 14px 12px 14px !important;
+}
+.menu ul li {
+    border-bottom: 1px solid transparent;
+}
+.menu ul li .router-link-active {
+    padding: 15px 14px 12px 14px !important;
+}
+.menu ul li .router-link-active {
+    background: transparent !important;
+    border-bottom: 2px solid white;
+}
+.idLikeTo_Text, .DDown_Cont_LikeTo, .imA_text, .DDown_Cont_LookFor, .lookingFor_text, .DDown_Cont_LookFor {
+    width: auto;
+    float: left;
+    display: inline-block;
+}
+.DDown_Cont_LikeTo, .DDown_Cont_LookFor, .DDown_Cont_LookFor {
+    margin-left: 10px;
+    margin-top: 8px;
+    min-width: 250px;
+}
+.v-select .selected-tag {
+    background-color:transparent !important;
+    border:none !important;
+    margin: 6px 1px 0 3px !important;
+}
+.v-select .dropdown-toggle {
+    border:none !important;
+    background: #fcfcfc !important;
+}
+#topNav > li {
+    text-transform: uppercase;
+}
+#home > h1 {
+    margin-top: 60px;
 }

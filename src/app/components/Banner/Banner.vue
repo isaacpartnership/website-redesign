@@ -17,7 +17,8 @@
           div(class="lookFor_InnerCont")
             p(class="imA_text") I'm a
             div(class="DDown_Cont_LookFor")
-              v-select( :value.sync='selected', :options='whatAreYouOpt', :searchable='false', :on-change='consoleCallback')
+              v-select( :value.sync='selected', :options='whatAreYouOpt', :searchable='false', :on-change='consoleCallback' id='iAmA_LookFor')
+              Button(type="button" id="toggle_Btn" class="not-toggled" disabled) submit
             br
             br
           div(class="lookingFor_Cont")
@@ -33,8 +34,9 @@
   export default {
     components: {vSelect},
     methods: {
-      consoleCallback (val) {
-        JSON.stringify(val)
+      consoleCallback (val) {§
+        let tbutton = document.getElementById('toggle_Btn')
+        tbutton.removeAttribute('disabled')
       }
     },
     data () {
@@ -47,5 +49,3 @@
     }
   }
 </script>
-
-

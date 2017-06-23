@@ -25,7 +25,7 @@
       router-link(to='/home')#logo
         img(src='/assets/img/logo.svg')
       nav.menu
-        ul
+        ul(id="topNav")
           li.home
             router-link(to='/home') Home
           li.strategy
