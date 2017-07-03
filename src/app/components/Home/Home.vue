@@ -18,4 +18,6 @@ export default {
   }
 }
 </script>
-<style lang='scss' src='./style.scss' scoped></style>
+<style lang='scss' scoped>
+  @import './style.scss';
+</style>

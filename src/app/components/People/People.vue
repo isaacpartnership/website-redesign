@@ -1,4 +1,9 @@
-<template lang="pug" src="./People.tpl.pug"></template>
+<template lang="pug">
+.bob2(v-if='person != null')
+  img.item_avatar(:src='person.picture.thumbnail', v-bind:class="[person.gender]")
+  | {{person.name.first}}
+  | {{person.name.last}}
+</template>
 <script>
 import Vue from 'vue'
 import Vuex from 'vuex'
@@ -40,4 +45,6 @@ export default {
   }
 }
 </script>
-<style lang='scss' src='./style.scss' scoped></style>
+<style lang='scss' scoped>
+  @import './style.scss';
+</style>

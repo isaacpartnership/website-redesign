@@ -25,7 +25,8 @@
             div(class="DDown_Cont_LookFor")
               v-select( :value.sync='selected', :options='lookForOpt', :searchable='false', :on-change='thirdChange')
       div(class="Spacing")
-    Button(type="button" id="toggle_Btn" class="not-toggled" disabled) submit
+        button(type="button" id="toggle_Btn" class="not-toggled" disabled) Submit
+
 
 </template>
 
@@ -39,16 +40,20 @@
         document.getElementById('Banner_Cont')
       },
       firstChange (val) {
+        console.log('show')
+        /*
         document.getElementById('Look_OuterCont').style.display = 'block'
         document.getElementById('banner_Cont').style.display = 'none'
-        console.log('show')
         document.getElementById('toggle_Btn').setAttribute('disabled', true)
+         */
       },
       secondChange (val) {
+        console.log('hide')
+        /*
         document.getElementById('Look_OuterCont').style.display = 'none'
         document.getElementById('lookingFor_Cont').style.display = 'block'
-        console.log('hide')
         document.getElementById('toggle_Btn').removeAttribute('disabled')
+        */
       },
       thirdChange (val) {
         console.log('something')
@@ -67,3 +72,7 @@
     }
   }
 </script>
+
+<style lang='scss' scoped>
+  @import './style.scss';
+</style>

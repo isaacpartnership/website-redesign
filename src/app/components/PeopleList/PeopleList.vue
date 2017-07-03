@@ -1,16 +1,13 @@
-<template lang="pug" src="./PeopleList.tpl.pug"></template>
+<template lang="pug">
+  include ./PeopleList.tpl.pug
+</template>
 <script>
-import Vue from 'vue'
-import Vuex from 'vuex'
 import store from '../../store'
 import UserService from '../../services/UserService'
-Vue.use(Vuex)
-Vue.filter('capitalize', value => value.charAt(0).toUpperCase() + value.substr(1))
 
 export default {
   name: 'PeopleList',
   metaInfo: {
-    // title will be injected into parent titleTemplate
     title: 'Our Team'
   },
   data () {
@@ -23,7 +20,7 @@ export default {
     }
   },
   methods: {
-    getPeople (num) {
+    getPeople () {
       return new Promise((resolve, reject) => {
         if (store.state.persons.length === 0) {
           UserService.get().then(response => {
@@ -39,9 +36,9 @@ export default {
               this.pending = false
               resolve(parsed.length)
             })
-            // .catch(function (error) {
-            //   reject(error)
-            // })
+            .catch(function (error) {
+              reject(error)
+            })
           })
         } else {
           this.pending = false
@@ -63,9 +60,9 @@ export default {
   mounted () {
     this.$ls.set('last-page', 'team')
     this.reload()
-    Vue.nextTick(function () {
-    })
   }
 }
 </script>
-<style lang='scss' src='./style.scss' scoped></style>
+<style lang='scss' scoped>
+  @import './style.scss';
+</style>
