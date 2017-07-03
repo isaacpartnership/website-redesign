@@ -41,7 +41,6 @@
     overflow: visible !important;
     height:50px;
     border-color: #f2f2f2 !important;
-
 }
 .v-select .dropdown-menu {
     overflow: auto !important;
@@ -54,4 +53,12 @@
 }
 .lookingFor_Cont {
     margin-top:20px;
+}
+#Look_OuterCont {
+    display:none !important;
+}
+#toggle_Btn {
+    float: left;
+    margin-top:100px;
+    display: block;
 }
