@@ -26,12 +26,8 @@
               v-select( :value.sync='selected', :options='lookForOpt', :searchable='false', :on-change='thirdChange')
       div(class="Spacing")
         button(type="button" id="toggle_Btn" class="not-toggled" disabled) Submit
-
-
 </template>
-
 <script>
-
   import vSelect from 'vue-select'
   export default {
     components: {vSelect},
@@ -72,7 +68,6 @@
     }
   }
 </script>
-
 <style lang='scss' scoped>
   @import './style.scss';
 </style>

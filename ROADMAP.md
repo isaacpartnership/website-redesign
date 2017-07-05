@@ -1,6 +1,6 @@
 Pre-render based on Sitemap as an API
 
-Sitemap will need to include all URLs for news etc.
+Sitemap will need to include all URLs for news etc
 
 Pre-render to be enhanced with absolute URL's from .env vars
 
